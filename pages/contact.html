@@ -77,25 +77,20 @@
         <div class="contact-publicity">PUBLICITY</div>
         <div class="contact-publicity-mail">MKT@NTL.COM</div>
     </section>
-   <form>
-    <fieldset>
-        <legend>Contact</legend>
-        <label for="Message">Message</label>
-        <input type="text">
-        <br>
-        <label for="Name">Name</label>
-        <input type="text">
-        <label for="Email">Email</label>
-        <input type="text">
-        <br>
-        <label for="City">City</label>
-        <input type="text">
-        <label for="Country">Country</label>
-        <input type="text">
-        <input type="submit">
-
-    </fieldset>
-   </form>
+    
+    <!-- form BOOTSTRAP -->
+    <form class="container-fluid" >
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+        <div class="mb-2">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <!-- form BOOTSTRAP -->
 
    <footer>
     <img src="..//assets/img/instagram.png" alt="Instagram">
