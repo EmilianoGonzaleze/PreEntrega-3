@@ -79,6 +79,15 @@ h2 {
   margin: auto;
   width: 50%; }
 
+footer-box {
+  width: 100%;
+  justify-content: center; }
+
+footer-img {
+  width: 100%;
+  justify-content: center;
+  padding: 200px; }
+
 .contact-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -610,8 +619,3 @@ a:hover {
     width: 250px; }
   .poster-3-title {
     margin-top: 2%; } }
-
-footer-img {
-  display: inline-flex;
-  justify-content: center;
-  padding: 15px; }
