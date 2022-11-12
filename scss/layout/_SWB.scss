@@ -71,10 +71,9 @@
   margin-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-template-areas:
-  "review review review"
-  "pic review spotify"
+  "pic spotify review"
   ;
   background-blend-mode: color-burn;
   overflow: hidden;
