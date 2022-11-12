@@ -432,14 +432,13 @@ a:hover {
   justify-self: center; }
 
 .body-swb {
-  background-image: url("/assets/img/NTL-background.png");
-  background-repeat: repeat-y;
-  background-position: center;
-  background-size: cover;
-  position: relative; }
+  background: url("/assets/img/NTL-background.png") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .img-swb {
-  background-color: transparent;
   position: absolute;
   margin: 0;
   top: 80%;
@@ -455,22 +454,9 @@ a:hover {
   margin-left: 10%;
   margin-right: 10%; }
 
-.iframe-video {
-  display: block;
-  margin: auto;
-  width: 1.8fr; }
-
-.review-ctn {
-  width: 17%;
-  background-color: transparent;
-  position: absolute;
-  margin: 5%;
-  top: 40%;
-  left: 5%; }
-
 @keyframes display {
   0% {
-    transform: translateX(150px);
+    transform: translateX(50px);
     opacity: 0; }
   10% {
     transform: translateX(0);
@@ -479,24 +465,14 @@ a:hover {
     transform: translateX(0);
     opacity: 1; }
   30% {
-    transform: translateX(-200px);
+    transform: translateX(-50px);
     opacity: 0; }
   100% {
-    transform: translateX(-200px);
+    transform: translateX(-50px);
     opacity: 0; } }
-
-.review-ctn {
-  width: 17%;
-  background-color: transparent;
-  position: absolute;
-  margin: 1%;
-  top: 40%;
-  left: 2%; }
 
 .review-ctn > div {
   position: absolute;
-  top: 0;
-  left: calc(50% - 100px);
   opacity: 0;
   animation: display 20s infinite; }
 
@@ -508,6 +484,30 @@ div:nth-child(3) {
 
 div:nth-child(4) {
   animation-delay: 15s; }
+
+/*aaaaaaaaaaaaa grid*/
+.swb-out-grid {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "review review review" "pic review spotify";
+  background-blend-mode: color-burn;
+  overflow: hidden; }
+
+.review-ctn {
+  margin-top: 5%;
+  grid-area: spotify;
+  font-size: large; }
+
+.swb-img {
+  margin-top: 5%;
+  grid-area: review; }
+
+.swb-spotify {
+  margin-top: 5%;
+  grid-area: pic; }
 
 /*  BREAKPOINT TABLET  */
 @media (max-width: 920px) {
