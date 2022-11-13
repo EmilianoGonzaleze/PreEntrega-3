@@ -6,19 +6,6 @@
   background-size: cover;
 }
 
-.img-swb{
-    position: absolute;
-    margin: 0;
-    top: 80%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 63, 163);
-    background: rgba(0,0,0,0.5);
-    font-size: xx-large;
-    
-}
-
 .album-description{
     margin-top: 5%;
     margin-left: 10%;
@@ -54,7 +41,6 @@
     opacity: 0;
     animation: display 20s infinite;
     margin-top: 0;
-    justify-self: center;
   }
   
   div:nth-child(2) {
@@ -69,15 +55,14 @@
 
 /*aaaaaaaaaaaaa grid*/
 .swb-out-grid{
-  margin-top: 25%;
   margin-bottom: 5%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 0.8fr);
   grid-template-areas:
-  "pic review"
+  ". carousel ."
+  "pic review ."
   ;
-  overflow: hidden;
   }
 
   .swb-img{
@@ -90,13 +75,12 @@
     grid-area: pic;
   }
 
-  .pic{
-    width:1fr;
-    height: fit-content;
-  }
-  .review-ctn{
-    display: flex;
-    font-size: large;
-    align-self: center;
+  .review-ctn .pic{
+    width: 80%;
+    justify-content: center;
     justify-self: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: x-large;
+    grid-area: carousel;
   }
