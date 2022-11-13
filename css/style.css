@@ -431,13 +431,6 @@ a:hover {
   grid-area: poster-3-title;
   justify-self: center; }
 
-.body-swb {
-  background: url("/assets/img/NTL-background.png") no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
 .album-description {
   margin-top: 5%;
   margin-left: 10%;
@@ -463,8 +456,7 @@ a:hover {
 .review-ctn > div {
   position: absolute;
   opacity: 0;
-  animation: display 20s infinite;
-  margin-top: 0; }
+  animation: display 20s infinite; }
 
 div:nth-child(2) {
   animation-delay: 5s; }
@@ -480,7 +472,7 @@ div:nth-child(4) {
   margin-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 0.8fr);
+  grid-template-rows: 20em 1fr;
   grid-template-areas: ". carousel ." "pic review ."; }
 
 .swb-img {
